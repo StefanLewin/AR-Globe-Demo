@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="Globe" size="0.100000 0.100000" />
+    <ImageTarget name="Card" size="0.050000 0.050000" />
+  </Tracking>
+</QCARConfig>
