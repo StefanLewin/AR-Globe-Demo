@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class CountryPicker : MonoBehaviour
 {
+    [SerializeField] private Countries countries;
+    //[SerializeField] private CubeGenerator generator;
+    public float duration = 2f; // Total time for the rotation
+    
     // Start is called before the first frame update
     void Start()
     {
         StartSpin();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public float duration = 2f; // Total time for the rotation
-
+    
     public void StartSpin()
     {
         StartCoroutine(SpinCoroutine());
@@ -56,5 +52,6 @@ public class CountryPicker : MonoBehaviour
         int markerNumber = Random.Range(0, transform.childCount - 1);
         
         this.transform.GetChild(markerNumber).GetComponent<CountryMarker>().ShowMarker();
+        
     }
 }
